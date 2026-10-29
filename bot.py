@@ -381,7 +381,7 @@ BLOCS = {
 def programme(nom: str, jour: date) -> list[str]:
     """Liste des blocs à envoyer pour un programme (ou un bloc seul)."""
     if nom == "matin":
-        return ["priere_matin", "lectures", "commentaire", "rosaire", "pensee"]
+        return ["priere_matin", "lectures", "rosaire", "pensee"]
     if nom == "midi":
         blocs = ["angelus"]
         if jour.weekday() in (1, 4):  # mardi et vendredi
